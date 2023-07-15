@@ -1,0 +1,21 @@
+# YAML is case sensitive
+# Key value pairs
+
+name: Rashid  # this can also be written as "name" : "Rashid", YAML can auto detect strings.
+
+# this is a block sequence, you can notice that you can add spaces too
+cities:
+  - Karachi
+  - Lahore
+  - Peshawar
+  - Islamabad
+  - Rani pur
+
+
+# nesting
+username: Rashid
+age: 23
+server:
+  ip: "103.97.18.9"
+
+  
