@@ -1,21 +1,70 @@
 # YAML is case sensitive
-# Key value pairs
 
-name: Rashid  # this can also be written as "name" : "Rashid", YAML can auto detect strings.
+# Define a key-value pair for the name
+name: Rashid  # This can also be written as "name" : "Rashid". YAML can auto-detect strings.
 
-# this is a block sequence, you can notice that you can add spaces too
+# Define a block sequence for cities
 cities:
-  - Karachi
-  - Lahore
-  - Peshawar
-  - Islamabad
-  - Rani pur
+  - Karachi  # The first city is Karachi
+  - Lahore   # The second city is Lahore
+  - Peshawar # The third city is Peshawar
+  - Islamabad # The fourth city is Islamabad
+  - Rani pur  # The fifth city is Rani pur
 
-
-# nesting
+# Nesting
 username: Rashid
 age: 23
 server:
-  ip: "103.97.18.9"
+  ip: "103.97.18.9"  # IP address of the server
+  location: "KSA"   # Location of the server
+# List of skills
+skills:
+  - Flutter     # Skill: Flutter
+  - DevOps      # Skill: DevOps
+  - Kubernetes  # Skill: Kubernetes
+  - MERN        # Skill: MERN stack
 
-  
+# Testing multiline string
+testing: |
+  This  # First line of the multiline string
+  is a  # Second line of the multiline string
+  multiline  # Third line of the multiline string
+  string  # Fourth line of the multiline string
+
+
+# Boolean values
+isEmployed: true  # Boolean value indicating if the person is employed
+
+# Numeric values
+height: 175  # Height in centimeters
+weight: 70.5  # Weight in kilograms
+
+# Date and time values
+birthdate: 1998-05-15  # Date of birth
+appointment: 2023-07-20T14:30:00  # Scheduled appointment date and time
+
+# Null value
+notes: null  # Placeholder for additional notes
+
+# Mapping of key-value pairs
+personalInfo:
+  address: "123 Main Street"
+  city: "New York"
+  country: "USA"
+
+# Anchors and aliases for reusing values
+commonSkills: &commonSkills
+  - JavaScript
+  - HTML
+  - CSS
+
+programmingSkills:
+  - *commonSkills  # Reuse the common skills
+  - Python
+  - Java
+
+# Environment variables
+environment:
+  DATABASE_HOST: "localhost"
+  DATABASE_PORT: 5432
+  API_KEY: "your_api_key"
